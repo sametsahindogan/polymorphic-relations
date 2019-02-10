@@ -56,13 +56,13 @@
                                                     <td>{{ $post->content }}</td>
                                                     <td>
                                                         @foreach($post->categories as $category)
-                                                            <a href="{{ route('getCategorizedPosts', [ $category->id ]) }}">- {{$category->title}}</a>
+                                                            <a href="{{ route('getCategorizedPosts', [ $category->id ]) }}">- {{$category->title}} <span style="color:red;">( Click to see posts )</span></a>
                                                         @endforeach
                                                         @if(count($post->categories) < 1) *not yet added* @endif
                                                     </td>
                                                     <td>
                                                         @foreach($post->tags as $tag)
-                                                            <a href="{{ route('getTaggedPosts', [ $tag->id ]) }}">- {{$tag->title}}</a>
+                                                            <a href="{{ route('getTaggedPosts', [ $tag->id ]) }}">- {{$tag->title}}<span style="color:red;"> ( Click to see posts )</span></a>
                                                         @endforeach
                                                         @if(count($post->tags) < 1) *not yet added* @endif
                                                     </td>
