@@ -14,8 +14,6 @@ Modüllerden (Tag ve Category) oluşan basit bir blog sistemi.
 
 `composer dump-autoload`
 
-`php artisan vendor:publish --provider="Nwidart\Modules\LaravelModulesServiceProvider"`
-
 `php artisan module:use *module_name*`
 
 `php artisan module:enable *module_name*`
